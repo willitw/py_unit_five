@@ -1,20 +1,15 @@
+def count(start, end):
+    result = ""
 
-def count(first, last):
-    """
-    This function will create a string of numbers separated by a space. The numbers will start with the
-    first number and end with the second. The second number SHOULD be included as part of the string. If
-    the first number is larger than the second, the numbers should count down, rather than up.
-    count(5, 10) returns "5 6 7 8 9 10 "
-    :param first: The starting number
-    :param second: The final number. Must be included
-    :return: A string containing the numbers
-    """
-    pass # make sure to delete this line when you write your own function
+    if start <= end:
+        for num in range(start, end + 1):
+            result += str(num) + " "
+    else:
+        for num in range(start, end - 1, -1):
+            result += str(num) + " "
 
+    return result
 
-def main():
-    print(count(0, 6))
-
-
-if __name__ == '__main__':
-    main()
+# Tests
+print(count(0, 6))  # Output: "0 1 2 3 4 5 6 "
+print(count(6, 0))  # Output: "6 5 4 3 2 1 0 "

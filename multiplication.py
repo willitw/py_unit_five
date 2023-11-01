@@ -1,7 +1,12 @@
 def multiplication_table(number):
-    """
-    Ex. multiplication_table(6) returns "6 12 18 24 30 36 42 48 54 60 66 72 "
-    :param number: An integer
-    :return: A string of 12 values representing the mulitiplication table of the parameter number.
-    """
-    pass # Make sure to delete this line when writing your function.
+    if not isinstance(number, int) or number < 1:
+        return "Invalid input. Please provide a positive integer."
+
+    table = [str(number * i) for i in range(1, 13)]
+    return " ".join(table)
+
+
+if __name__ == "__main__":
+    number = 5
+    result = multiplication_table(number)
+    print(result)
