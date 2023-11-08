@@ -64,8 +64,9 @@ def main():
         total_attempts += attempts                  # Add the number of attempts from the current game to the total attempts for all the games
     average_attempts = total_attempts / num_games   # Takes the total attemps and divides it over the number of games to get the average number of tries
 
-    print("Your average number of guesses across " + str(num_games) + " games is: " + "{:.2f}, NICE JOB".format(average_attempts))   # Calculate and display the average number of attempts
 
+
+1
 
 
 
@@ -92,7 +93,7 @@ def main():
     print("    ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠛⠿⣿⣼⣿⣿⣿⣿⣿⣿⣶⣮⣿⣿⣾⣿⣿⠿⠛⠁⠀⠘⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀")
     print("    ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠛⠛⠿⠻⠟⠻⠻⠟⠛⠛⠋⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀")
 
-
+print("Your average number of guesses across " + str(num_games) + " games is: " + "{:.2f}, NICE JOB".format(average_attempts))   # Calculate and display the average number of attempts
 
 
     print("⠀⠀⠀⠀⠀⠀⠀⠀⠀             ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠜⠟⠉⠉⠛⠛⠳⢦⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀ ⠀")
